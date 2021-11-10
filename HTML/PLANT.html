@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Plant - Ni'Vi Shop</title>
+        <link rel="icon" href="../image/logo.png">
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/SHOP.css">
+        <link rel="stylesheet" href="../CSS/DECOR.css">
+        <link rel="stylesheet" href="../CSS/responsive-index.css">
+        <script src="../js/jquery-3.6.0.min.js"> </script>
+        <script src="../js/javascript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <link href="../fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+            <header>
+                <div class="nav">
+                    <a href="#" class="logo">Ni'Vi</a>
+                    <ul class="menu">
+                        <li><a href="../HTML/index.html" >Home</a></li>
+                        <li><a href="../HTML/SHOP.html" >Shop</a></li>
+                        <li><a href="../HTML/DECOR.html" >Decor</a></li>
+                        <li><a href="../HTML/PLANT.html" >Plant</a></li>
+                        <li><a href="../HTML/LIGHT.html" >Light</a></li>
+                        <li><a href="../HTML/CHAIR.html" >Chair</a></li>
+                    </ul>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/vhuunghia" class="only"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="only"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vhuunghiax/" class="only"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="only"><i class="fas fa-search"></i></a>
+                        <a class="only">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="product-in-cart">
+                                <div class="subtotal">
+                                    <span>
+                                        SUBTOTAL: $ 
+                                        <bdi id="total"style="color: rgb(113, 113, 113); font-weight: bolder;">0.00</bdi>
+                                    </span>
+                                </div>
+                                <div class="check-view">
+                                    <div class="check-view-all check-view-all-left">
+                                        <i class="far fa-eye"></i>
+                                        View cart
+                                    </div>
+                                    <div class="check-view-all">
+                                        <i class="far fa-check-circle"></i>
+                                        Check out
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="quantity">
+                                0
+                            </span>
+                        </a>
+                    </div>  
+                </div>
+                <div class="nav-mobile" id="nav-mobile">
+                    <div class="nav-mobile-1">
+                        <div class="nav-mobile-content">
+                            <div class="nav-mobile-content-wrap">
+                                <a href="#" class="logo">Ni'Vi</a>
+                                <div class="nav-mobile-content-wrap-right">
+                                    <span class="menu-bars">
+                                        <i class="fas fa-bars "></i>
+                                    </span>
+                                    <span class="close-menu">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <a class="only-mobile">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <div class="product-in-cart-mobile">
+                                            <div class="subtotal-mobile">
+                                                <span>
+                                                    SUBTOTAL: $ 
+                                                    <bdi id="total-mobile" style="color: rgb(113, 113, 113); font-weight: bolder;">0.00</bdi>
+                                                </span>
+                                            </div>
+                                            <div class="check-view-mobile">
+                                                <div class="check-view-all-mobile check-view-all-left-mobile">
+                                                    <i class="far fa-eye"></i>
+                                                    View cart
+                                                </div>
+                                                <div class="check-view-all-mobile">
+                                                    <i class="far fa-check-circle"></i>
+                                                    Check out
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span id="quantity-mobile">
+                                            0
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="nav-mobile-content-2">
+                            <div class="nav-mobile-menu">
+                                <ul class="nav-mobile-menu-top">
+                                    <li>
+                                        <a href="../HTML/index.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/SHOP.html">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/DECOR.html">
+                                            Decor
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/PLANT.html">
+                                            Plant
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/LIGHT.html">
+                                            Light
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/CHAIR.html" style="border-bottom: none;">
+                                            Chair
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="nav-mobile-menu-top-middle">
+                                    <div class="mobile-search">
+                                        <input type="text" placeholder="Search here...">
+                                        <button class="mobile-icon-search">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="nav-mobile-content-3">
+                                    <a href="https://www.facebook.com/vhuunghia" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-facebook"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.instagram.com/vhuunghiax/" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="title-bar">
+                    <div class="title-bar-left">
+                        <h2>Shop</h2>
+                    </div>
+                    <div class="title-bar-right">
+                        <span>
+                            <a href="../HTML/index.html" style="font-weight: 200;">Home</a>
+                        </span>
+                        <span> > </span>
+                        <span style=" font-weight: bolder; margin-right: 10px; color: #6d6b6b  "> plant </span>
+                    </div>
+                </div>
+                <div class="decor">
+                    <div class="decor-all">
+                        <div class="product-right"> 
+                            <div class="product-right-wrapper">
+                                <div class="product-right-wrapper-top">
+                                    <h3>Categories</h3>
+                                    <div class="product-right-wrapper-top-inner">
+                                        <div class="product-right-wrapper-top-inner-all">
+                                            <div class="product-right-wrapper-top-inner-all-1">
+                                                <a href="#">CHAIR</a>
+                                            </div>
+                                            <div class="product-right-wrapper-top-inner-all-2">
+                                                <span>1</span>
+                                            </div> 
+                                        </div>
+                                        <div class="product-right-wrapper-top-inner-all">
+                                            <div class="product-right-wrapper-top-inner-all-1">
+                                                <a href="#">DECOR</a>
+                                            </div>
+                                            <div class="product-right-wrapper-top-inner-all-2">
+                                                <span>3</span>
+                                            </div> 
+                                        </div>
+                                        <div class="product-right-wrapper-top-inner-all">
+                                            <div class="product-right-wrapper-top-inner-all-1">
+                                                <a href="#">LIGHT</a>
+                                            </div>
+                                            <div class="product-right-wrapper-top-inner-all-2">
+                                                <span>2</span>
+                                            </div> 
+                                        </div>
+                                        <div class="product-right-wrapper-top-inner-all">
+                                            <div class="product-right-wrapper-top-inner-all-1">
+                                                <a href="#">PLANT</a>
+                                            </div>
+                                            <div class="product-right-wrapper-top-inner-all-2">
+                                                <span>3</span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-right-wrapper-bottom">
+                                    <h4>Filter by price</h4>
+                                    <div class="product-right-wrapper-bottom-price">
+                                        <div class="product-right-wrapper-bottom-price-line">
+                                            <span class="product-right-wrapper-bottom-price-line-1">
+                                            </span>
+                                            <span class="product-right-wrapper-bottom-price-line-2">
+                                            </span>
+                                        </div>
+                                        <div class="product-right-wrapper-bottom-price-last">
+                                            <div class="product-right-wrapper-bottom-price-last-1">
+                                                Price:
+                                                <span>
+                                                    £0
+                                                </span>
+                                                —
+                                                <span>
+                                                    £10
+                                                </span>
+                                            </div>
+                                            <button type="submit" class="button">
+                                                FILTER
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="decor-all-left">
+                            <p>Showing all <strong style="color: #8d8d8d;">3</strong> results</p>
+                            <input type="text" placeholder="Search here..." style="float: left;">
+                            <input type="button" class="Search" value="Search">
+                            <ul style="margin: 0 -15px;">
+                                <li class="decor-all-left-inner">
+                                    <a style="display: block" href="../HTML/Table scullent plant.html">
+                                        <img src="../image/list-1.jpg">
+                                    </a>
+                                    <div style=" margin-top: 20px; margin-bottom: 7.5px;">
+                                        <h2>Table scullent plant</h2>
+                                    </div>
+                                    <span>$ <bdi>1.00</bdi></span>
+                                    <a class="shop">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="decor-all-left-inner">
+                                    <a style="display: block" href="../HTML/Cactus succulent.html">
+                                        <img src="../image/list-6.jpg">
+                                    </a>
+                                    <div style=" margin-top: 20px; margin-bottom: 7.5px;">
+                                        <h2>Cactus succulent</h2>
+                                    </div>
+                                    <span>$ <bdi>6.00</bdi></span>
+                                    <a class="shop">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="decor-all-left-inner">
+                                    <a style="display: block" href="../HTML/Concrete flower pot.html">
+                                        <img src="../image/list-9.jpg">
+                                    </a>
+                                    <div style=" margin-top: 20px; margin-bottom: 7.5px;">
+                                        <h2>Concrete flower pot</h2>
+                                    </div>
+                                    <span>$ <bdi>9.00</bdi></span>
+                                    <a class="shop">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container-8">
+                    <div class="container-8-top">
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <h2>PAYMENT METHOD</h2>
+                                <div class="container-8-top-all-inner-text">
+                                    With convenient services of our store, here are the payment methods if you want to pay online.
+                                </div>
+                                <div class="card">
+                                    <div>
+                                        <i class="fab fa-cc-visa"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-paypal"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-jcb"></i>
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0;">
+                                    <i class="fa fa-lock"></i>
+                                    <span class="container-8-top-all-inner-text">Secure online payment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content">
+                                    <h2>TOP RATED</h2>
+                                    <div>
+                                        <div class="top-rate">
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-3.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Wooden picture frame</a>
+                                                        <p>$3.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-4.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Bedroom mirror</a>
+                                                        <p>$4.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-5.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Milimalastic chair</a>
+                                                        <p>$5.00</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content-1">
+                                    <h2>SHOPPING GUIDE</h2>
+                                    <div>
+                                        <div class="SHOPPING-GUIDE">
+                                            <div>
+                                                <a href="#">FAQ</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Shipment</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Returns</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Policies</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Gift cards</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Clothing care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Purchase conditions</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content-1">
+                                    <h2>COMPANY</h2>
+                                    <div>
+                                        <div class="SHOPPING-GUIDE">
+                                            <div>
+                                                <a href="#">About us</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Press</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Our team</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Offices</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Affiliates</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Giveaway</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-8-bottom">
+                        <p style=" text-align: center;">Copyright © 2021 Võ Hữu Nghĩa - nghiax'K</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="go-to-top">
+                <a class="go-to-top-inside" href="javascript:;">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+            </div>
+    </body>
+</html>

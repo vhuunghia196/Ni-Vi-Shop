@@ -1,0 +1,66 @@
+.container{
+    margin-left: 74.5px;
+    margin-right: 74.5px;
+}
+.decor-all{
+    padding: 60px 0;
+}
+.decor-all-left{
+    padding: 0 19px 0 0;
+    width: 74%;
+}
+.decor-all-left > p{
+    font-weight: 200;
+    color: #8d8d8d;
+    line-height: 50px;
+    font-size: 20px;
+    margin-bottom: 45px;
+    float: right;
+}
+.decor-all-left input{
+    height: 50px;
+    display: block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 2px solid #c4afa1;
+    background-color: #f8f8f8;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    margin-bottom: 45px;
+}
+.decor-all-left-inner {
+    width: 32.95%;
+    display: inline-block;
+    padding: 0 13px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.decor-all-left ul > li > a img{
+    width: 100%;
+}
+.decor-all-left-inner h2{
+    font-weight: 500;
+    font-size: 18px;
+}
+.decor-all-left-inner span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.product-right-wrapper-bottom-price-line{
+    position: relative;
+}
+.product-right-wrapper-bottom-price-line span{
+    position: absolute;
+    padding: 10px 10px;
+}
+.product-right-wrapper-bottom-price-line-1{
+    top: -7px;
+    left: -15px;
+}
+.product-right-wrapper-bottom-price-line-2{
+    top: -7px;
+    right: 0;
+    left: 98%;
+}
+

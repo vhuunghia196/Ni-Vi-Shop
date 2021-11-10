@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Decorative pillow - Ni'Vi Shop</title>
+        <link rel="icon" href="../image/logo.png">
+        <meta charset="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/SHOP.css">
+        <link rel="stylesheet" href="../CSS/DECOR.css">
+        <link rel="stylesheet" href="../CSS/detail-of-products.css">
+        <link rel="stylesheet" href="../CSS/responsive-index.css">
+        <script src="../js/jquery-3.6.0.min.js"> </script>
+        <script src="../js/javascript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <link href="../fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <header>
+                <div class="nav">
+                    <a href="#" class="logo">Ni'Vi</a>
+                    <ul class="menu">
+                        <li><a href="../HTML/index.html">Home</a></li>
+                        <li><a href="../HTML/SHOP.html" >Shop</a></li>
+                        <li><a href="../HTML/DECOR.html" >Decor</a></li>
+                        <li><a href="../HTML/PLANT.html">Plant</a></li>
+                        <li><a href="../HTML/LIGHT.html" >Light</a></li>
+                        <li><a href="../HTML/CHAIR.html" >Chair</a></li>
+                    </ul>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/vhuunghia" class="only"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="only"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vhuunghiax/" class="only"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="only"><i class="fas fa-search"></i></a>
+                        <a class="only">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="product-in-cart">
+                                <div class="subtotal">
+                                    <span>
+                                        SUBTOTAL: $ 
+                                        <bdi id="total"style="color: rgb(113, 113, 113); font-weight: bolder;">0.00</bdi>
+                                    </span>
+                                </div>
+                                <div class="check-view">
+                                    <div class="check-view-all check-view-all-left">
+                                        <i class="far fa-eye"></i>
+                                        View cart
+                                    </div>
+                                    <div class="check-view-all">
+                                        <i class="far fa-check-circle"></i>
+                                        Check out
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="quantity">
+                                0
+                            </span>
+                        </a>
+                    </div>  
+                </div>
+                <div class="nav-mobile" id="nav-mobile">
+                    <div class="nav-mobile-1">
+                        <div class="nav-mobile-content">
+                            <div class="nav-mobile-content-wrap">
+                                <a href="#" class="logo">Ni'Vi</a>
+                                <div class="nav-mobile-content-wrap-right">
+                                    <span class="menu-bars">
+                                        <i class="fas fa-bars "></i>
+                                    </span>
+                                    <span class="close-menu">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <a class="only-mobile">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <div class="product-in-cart-mobile">
+                                            <div class="subtotal-mobile">
+                                                <span>
+                                                    SUBTOTAL: $ 
+                                                    <bdi id="total-mobile" style="color: rgb(113, 113, 113); font-weight: bolder;">0.00</bdi>
+                                                </span>
+                                            </div>
+                                            <div class="check-view-mobile">
+                                                <div class="check-view-all-mobile check-view-all-left-mobile">
+                                                    <i class="far fa-eye"></i>
+                                                    View cart
+                                                </div>
+                                                <div class="check-view-all-mobile">
+                                                    <i class="far fa-check-circle"></i>
+                                                    Check out
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span id="quantity-mobile">
+                                            0
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="nav-mobile-content-2">
+                            <div class="nav-mobile-menu">
+                                <ul class="nav-mobile-menu-top">
+                                    <li>
+                                        <a href="../HTML/index.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/SHOP.html">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/DECOR.html">
+                                            Decor
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/PLANT.html">
+                                            Plant
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/LIGHT.html">
+                                            Light
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/CHAIR.html" style="border-bottom: none;">
+                                            Chair
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="nav-mobile-menu-top-middle">
+                                    <div class="mobile-search">
+                                        <input type="text" placeholder="Search here...">
+                                        <button class="mobile-icon-search">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="nav-mobile-content-3">
+                                    <a href="https://www.facebook.com/vhuunghia" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-facebook"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-twitter"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.instagram.com/vhuunghiax/" class="nav-mobile-content-3-all">
+                                        <span>
+                                            <i class="fab fa-instagram"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="title-bar">
+                    <div class="title-bar-left">
+                        <h2>Shop</h2>
+                    </div>
+                    <div class="title-bar-right">
+                        <span>
+                            <a href="../HTML/index.html" style="font-weight: 200;">Home</a>
+                        </span>
+                        <span> > </span>
+                        <span>
+                            <a href="../HTML/SHOP.html" style="font-weight: 200;">products</a>
+                        </span>
+                        <span> > </span>
+                        <span style=" font-weight: bolder; margin-right: 10px; color: #6d6b6b  ">Decorative pillow</span>
+                    </div>
+                </div>
+                <div class="detail-of-products">
+                    <div class="detail-of-products-top">
+                        <div class="detail-of-products-top-all">
+                            <div class="detail-of-products-top-img">
+                                <img src="../image/list-7-big.jpg">
+                            </div>
+                        </div>
+                        <div class="detail-of-products-top-all">
+                            <h1 class="name-of-products">
+                                Decorative pillow
+                            </h1>
+                            <p class="price-of-products">
+                                <bdi>
+                                    $ 7.00
+                                </bdi>
+                            </p>
+                            <p class="content-of-products">
+                                When these items are placed in the right place in your home, your home will glow and make you feel more comfortable looking at them.
+                            </p>
+                            <p class="content-of-products">
+                                With a unique design and delicate lines, as you see a quality item, it will sell out very quickly. So let's order quickly.
+                            </p>
+                            <p class="stock">
+                                <bdi style="font-weight: bolder; color: #757373;">20</bdi> 
+                                in stock
+                            </p>
+                            <div class="quantity-of-products">
+                                <div class="quantity-of-products-left">
+                                    <span class="increase-down">
+                                        <i class="fas fa-arrow-down"></i>
+                                    </span>
+                                    <bdi id="quantity_of_products">
+                                        1
+                                    </bdi>
+                                    <span class="increase-up">
+                                        <i class="fas fa-arrow-up"></i>
+                                    </span>
+                                </div>
+                                <button type="submit">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    ADD TO CART
+                                </button>
+                            </div>
+                            <div class="category">
+                                <span style=" font-weight: bolder;">
+                                    Category:
+                                </span>
+                                <span>
+                                    <a style=" font-size: 13px; margin-left: 5px; color: #5a5555" href="../HTML/DECOR.html">
+                                        DECOR
+                                    </a>
+                                </span>
+                            </div>
+                            <div style="position: relative;">
+                                <div class="share">
+                                    <div class="share-left">
+                                        <i class="fas fa-share-alt"></i>
+                                        <span>
+                                            SHARE
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="share-right">
+                                    <div class="facebook">
+                                        <a href="https://www.facebook.com/vhuunghia">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div class="instagram">
+                                        <a href="https://www.instagram.com/vhuunghiax/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-of-products-middle">
+                        <ul class="detail-of-products-middle-tab">
+                            <li class="detail-of-products-middle-tab-1">
+                                <a style="padding-left: 0px;" class="active-product" href="#tab1">
+                                    DESCRIPTION
+                                </a>
+                            </li>
+                            <li class="detail-of-products-middle-tab-2">
+                                <a href="#tab2">
+                                    ADDITIONAL INFORMATION
+                                </a>
+                            </li>
+                            <li class="detail-of-products-middle-tab-3">
+                                <a href="#tab3">
+                                    REVIEWS (0)
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="DESCRIPTION" id="tab1">
+                                <h3 style="margin-bottom: 15px">
+                                    Product Description
+                                </h3>
+                                <p style="margin-bottom: 15px">
+                                    A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which.
+                                </p>
+                                <p>
+                                    I enjoy with my whole heart. 
+                                </p>
+                            </div>
+                            <div class="ADDITIONAL-INFORMATION" id="tab2">
+                                <h3 style="margin-bottom: 15px">
+                                    Additional information
+                                </h3>
+                                <table class="ADDITIONAL-INFORMATION-table">
+                                    <tr>
+                                        <th>
+                                            Weight
+                                        </th>
+                                        <td>
+                                            1 kg
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Dimensions
+                                        </th>
+                                        <td>
+                                            12 × 25 × 3 cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Material	
+                                        </th>
+                                        <td>
+                                            50% Polyester, 30% Silk, 20% Acrylic
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Made in	
+                                        </th>
+                                        <td>
+                                            Wonderland
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="REVIEWS" id="tab3">
+                                <h3 style="margin-bottom: 15px">
+                                    Reviews
+                                </h3>
+                                <p>
+                                    There are no reviews yet.
+                                </p>
+                                <p>
+                                    Be the first to review “Decorative pillow”
+                                </p>
+                                <p>
+                                    Your email address will not be published. Required fields are marked
+                                    <i class="fas fa-check-circle"></i>
+                                </p>
+                                <p class="select-star">
+                                    <a>
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                    <a>
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                    <a>
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                    <a>
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                    <a>
+                                        <i class="far fa-star"></i>
+                                    </a>
+                                </p>  
+                                <p style="margin-bottom: 15px">
+                                    <label for="textarea">
+                                        Your review
+                                        <i class="fas fa-check-circle" style="color:#ff7012;"></i>
+                                    </label>
+                                    <textarea id="textarea"></textarea>
+                                </p>
+                                <p style="margin-bottom: 15px">
+                                    <label for="name">
+                                        Name
+                                        <i class="fas fa-check-circle" style="color:#ff7012;"></i>
+                                    </label>
+                                    <input type="text" placeholder="Võ Hữu Nghĩa" id="name">
+                                </p>
+                                <p style="margin-bottom: 15px">
+                                    <label for="email">
+                                        Email
+                                        <i class="fas fa-check-circle" style="color:#ff7012;"></i>
+                                    </label>
+                                    <input type="email" placeholder="nghiabongda2@gmail.com" id="email">
+                                </p>
+                                <p style="margin-bottom: 15px">
+                                    <input type="checkbox" placeholder="nghiabongda2@gmail.com" id="checkbox">
+                                    <label for="checkbox" style="display:inline; font-size: 17px;">
+                                        Save my name, email, and website in this browser for the next time I comment.
+                                    </label>
+                                </p>
+                                <p style="margin-bottom: 15px">
+                                    <button type="submit">
+                                        SUBMIT
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <section>
+                            <h2 style="margin-bottom: 45px; margin-top: 55px">
+                                Related production
+                            </h2>
+                            <ul style="margin: 0 -15px;">
+                                <li class="decor-all-left-inner">
+                                    <a style="display: block" href="../HTML/Wooden picture frame.html">
+                                        <img src="../image/list-3.jpg">
+                                    </a>
+                                    <div style=" margin-top: 20px; margin-bottom: 7.5px;">
+                                        <h2>Wooden picture frame</h2>
+                                    </div>
+                                    <span>$ <bdi>3.00</bdi></span>
+                                    <a class="shop">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="decor-all-left-inner">
+                                    <a style="display: block" href="../HTML/Bedroom mirror.html">
+                                        <img src="../image/list-4.jpg">
+                                    </a>
+                                    <div style=" margin-top: 20px; margin-bottom: 7.5px;">
+                                        <h2>Bedroom mirror</h2>
+                                    </div>
+                                    <span>$ <bdi>4.00</bdi></span>
+                                    <a class="shop">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container-8">
+                    <div class="container-8-top">
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <h2>PAYMENT METHOD</h2>
+                                <div class="container-8-top-all-inner-text">
+                                    With convenient services of our store, here are the payment methods if you want to pay online.
+                                </div>
+                                <div class="card">
+                                    <div>
+                                        <i class="fab fa-cc-visa"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-paypal"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fab fa-cc-jcb"></i>
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0;">
+                                    <i class="fa fa-lock"></i>
+                                    <span class="container-8-top-all-inner-text">Secure online payment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content">
+                                    <h2>TOP RATED</h2>
+                                    <div>
+                                        <div class="top-rate">
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-3.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Wooden picture frame</a>
+                                                        <p>$3.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-4.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Bedroom mirror</a>
+                                                        <p>$4.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="top-rate-all">
+                                                    <div>
+                                                        <img src="../image/list-5.jpg">
+                                                    </div>
+                                                    <div style="padding-left: 20px;">
+                                                        <a href="#">Milimalastic chair</a>
+                                                        <p>$5.00</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content-1">
+                                    <h2>SHOPPING GUIDE</h2>
+                                    <div>
+                                        <div class="SHOPPING-GUIDE">
+                                            <div>
+                                                <a href="#">FAQ</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Shipment</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Returns</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Policies</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Gift cards</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Clothing care</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Purchase conditions</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-8-top-all">
+                            <div class="container-8-top-all-inner">
+                                <div class="container-8-top-all-inner-content-1">
+                                    <h2>COMPANY</h2>
+                                    <div>
+                                        <div class="SHOPPING-GUIDE">
+                                            <div>
+                                                <a href="#">About us</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Press</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Our team</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Offices</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Affiliates</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Giveaway</a>
+                                            </div>
+                                            <div>
+                                                <a href="#">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-8-bottom">
+                        <p style=" text-align: center;">Copyright © 2021 Võ Hữu Nghĩa - nghiax'K</p>
+                    </div>
+                </div>
+            </footer>
+            <div class="go-to-top">
+                <a class="go-to-top-inside" href="javascript:;">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+            </div>
+    </body>
+</html>
